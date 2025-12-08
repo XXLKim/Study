@@ -50,8 +50,8 @@ def gen_img_plot(model, epoch, text_input):
         plt.axis('off')
 
     # 保存图片
-    os.makedirs("generated_images", exist_ok=True)
-    plt.savefig(f"generated_images/epoch_{epoch:03d}.png")
+    os.makedirs("/mnt/c/Users/lenovo/Desktop/generated_images", exist_ok=True)
+    plt.savefig(f"/mnt/c/Users/lenovo/Desktop/generated_images/epoch_{epoch:03d}.png")
     plt.close()
 
 
@@ -191,3 +191,4 @@ plt.xlabel('epoch')
 plt.legend(['G_loss','D_loss'])
 plt.savefig("loss_curve.png")
 plt.close()
+
